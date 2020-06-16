@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:gravity="center"
+        android:text="Bài Thi"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="30dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="45dp"
+        android:text="Câu 1:Việt Nam có bao nhiêu tỉnh thành? ?"
+        android:textSize="20dp"
+        android:paddingBottom="10dp"/>
+    <RadioGroup
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgr_1"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="A. 60"
+            android:id="@+id/rbtn_a1"
+            >
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/rbtn_b1"
+            android:text="B. 68"></RadioButton>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/rbtn_c1"
+            android:text="C. 64"></RadioButton>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/rbtn_d1"
+            android:text="D. 63"></RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_cau2"
+        android:padding="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="45dp"
+        android:text="Câu 2:Việt Nam có bao nhiêu thành phố trực thuộc tỉnh ?"
+        android:textSize="20dp" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rgr_2"
+        android:padding="20dp">
+        <RadioButton
+            android:id="@+id/rbtn_a2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="A. 75"
+            >
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rbtn_b2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" B. 70"></RadioButton>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/rbtn_c2"
+            android:text="C. 65"></RadioButton>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/rbtn_d2"
+            android:text="D. 60"></RadioButton>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/txt_cau3"
+        android:padding="0dp"
+        android:layout_width="match_parent"b
+        android:layout_height="60dp"
+
+        android:layout_marginTop="45dp"
+        android:text="Câu 3:Nước ta có ba nhiêu thành phố ?"
+        android:textSize="20dp"
+        />
+    <RadioGroup
+        android:padding="20dp"
+        android:id="@+id/rgr_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rbtn_a3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="A. 75 "
+            >
+        </RadioButton>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/rbtn_b3"
+            android:text="B. 76"></RadioButton>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/rbtn_c3"
+            android:text="C. 78"></RadioButton>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/rbtn_d3"
+            android:text="D. 77"></RadioButton>
+    </RadioGroup>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="20dp"
+        >-
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kết Quả"
+            android:id="@+id/btn_ketqua"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:onClick="ketqua"
+            ></Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="reset"
+            android:id="@+id/btn_lamlai"
+            android:text="Làm Lại"></Button>
+    </RadioGroup>
+
+
+
+</LinearLayout>
